@@ -28,7 +28,8 @@ const clock=new THREE.Clock();
 const animate=()=>{
   const elapsedTime=clock.getElapsedTime();
   
-  mesh.rotation.y=elapsedTime*Math.PI*2;
+  mesh.rotation.y=elapsedTime*Math.PI/5;
+  mesh.rotation.x=elapsedTime*Math.PI/3;
   
   renderer.render(scene,camera)
   window.requestAnimationFrame(animate)
